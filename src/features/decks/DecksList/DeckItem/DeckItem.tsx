@@ -4,7 +4,7 @@ type DeckProps = {
   deck: any // todo: fix
 }
 
-const TEST_ACC_NAME = 'test acc'
+const TEST_ACC_NAME = 'testName'
 
 export const DeckItem = ({ deck }: DeckProps) => {
   const isTestingDeck = deck.author.name === TEST_ACC_NAME

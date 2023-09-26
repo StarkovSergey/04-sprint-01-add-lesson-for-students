@@ -1,5 +1,5 @@
 const initialState = {
-  decks: [],
+  decks: [] as any[], // todo: add type
   searchParams: {
     name: '',
   },
@@ -7,6 +7,6 @@ const initialState = {
 
 type DecksState = typeof initialState
 
-export const decksReducer = (state: DecksState = initialState, action): DecksState => {
+export const decksReducer = (state: DecksState = initialState, action: any): DecksState => {
   return state
 }
