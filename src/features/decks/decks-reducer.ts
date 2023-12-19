@@ -7,6 +7,11 @@ const initialState = {
 
 type DecksState = typeof initialState
 
-export const decksReducer = (state: DecksState = initialState, action: any): DecksState => {
-  return state
+export const decksReducer = (state: DecksState = initialState, action: DecksActions): DecksState => {
+  switch (action.type) {
+    default:
+      return state
+  }
 }
+
+type DecksActions = any
