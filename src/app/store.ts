@@ -4,7 +4,7 @@ import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux'
 import { decksReducer } from '../features/decks/decks-reducer.ts'
 
 const rootReducer = combineReducers({
-  decks: decksReducer,
+  decksReducer,
 })
 
 export const store = legacy_createStore(rootReducer, applyMiddleware(thunkMiddleware))
